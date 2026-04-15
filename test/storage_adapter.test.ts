@@ -1,6 +1,6 @@
-import { describe, it, expect } from "bun:test";
-import { ProtocolAddress, SessionCipher, SessionRecord } from "../dist";
-import { FakeStorage } from "./helpers/fake_storage";
+import { describe, it, expect } from './testkit.js';
+import { ProtocolAddress, SessionCipher, SessionRecord } from "../dist/index.js";
+import { FakeStorage } from "./helpers/fake_storage.js";
 
 describe("StorageAdapter Interop", () => {
   const aliceAddress = new ProtocolAddress("alice", 1);

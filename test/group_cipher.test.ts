@@ -1,4 +1,4 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect } from './testkit.js';
 import {
   GroupCipher,
   GroupSessionBuilder,
@@ -6,8 +6,8 @@ import {
   SenderKeyRecord,
   SenderKeyDistributionMessage,
   ProtocolAddress,
-} from "../dist";
-import { FakeStorage } from "./helpers/fake_storage";
+} from "../dist/index.js";
+import { FakeStorage } from "./helpers/fake_storage.js";
 
 class LoggedFakeStorage extends FakeStorage {
   override async loadSenderKey(keyId: string): Promise<Uint8Array | undefined> {

@@ -1,11 +1,11 @@
-import { describe, it, expect, mock } from "bun:test";
+import { describe, it, expect, mock } from './testkit.js';
 import {
   setLogger,
   hasLogger,
   updateLogger,
   logMessage,
   type ILogger,
-} from "../dist";
+} from "../dist/index.js";
 
 function createMockLogger(level: string = "debug") {
   const calls: { method: string; obj: object; msg?: string }[] = [];

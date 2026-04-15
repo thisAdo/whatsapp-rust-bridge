@@ -1,6 +1,13 @@
 # whatsapp-rust-bridge
 
-High-performance WhatsApp utilities powered by Rust and WebAssembly.
+Utilidades de WhatsApp para Node.js puro, sin WebAssembly ni Bun.
+
+## Compatibility
+
+- Runtime: Node.js 20+
+- Build: `npm run build`
+- Tests: `npm test`
+- No requiere `wasm-pack`, `wasm-bindgen` ni Bun
 
 ## Features
 
@@ -12,6 +19,14 @@ High-performance WhatsApp utilities powered by Rust and WebAssembly.
 | Audio (waveform, duration)     | ✅     |
 | Image (thumbnails, conversion) | ✅     |
 | Sticker Metadata               | ✅     |
+
+## Build
+
+```bash
+npm install
+npm run build
+npm test
+```
 
 ## Baileys Integration
 

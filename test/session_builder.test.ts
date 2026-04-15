@@ -1,4 +1,4 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect } from './testkit.js';
 
 import {
   generateIdentityKeyPair,
@@ -7,8 +7,8 @@ import {
   generateSignedPreKey,
   ProtocolAddress,
   SessionBuilder,
-} from "../dist";
-import { FakeStorage } from "./helpers/fake_storage";
+} from "../dist/index.js";
+import { FakeStorage } from "./helpers/fake_storage.js";
 
 describe("SessionBuilder", () => {
   it("should successfully process a pre-key bundle and create a new session", async () => {

@@ -1,5 +1,5 @@
-import { describe, it, expect } from "bun:test";
-import { getEnabledFeatures } from "../dist";
+import { describe, it, expect } from './testkit.js';
+import { getEnabledFeatures } from "../dist/index.js";
 import { readFileSync } from "fs";
 import { join } from "path";
 

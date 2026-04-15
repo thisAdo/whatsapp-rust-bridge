@@ -1,11 +1,11 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect } from './testkit.js';
 import {
   generateIdentityKeyPair,
   generatePreKey,
   generateRegistrationId,
   generateSignedPreKey,
   verifySignature,
-} from "../dist";
+} from "../dist/index.js";
 
 describe("keyhelper", () => {
   it("generates registration ids within the valid range", () => {

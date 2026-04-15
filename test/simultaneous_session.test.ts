@@ -1,12 +1,12 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect } from './testkit.js';
 import {
   ProtocolAddress,
   SessionBuilder,
   SessionCipher,
   generateSignedPreKey,
   generatePreKey,
-} from "../dist";
-import { FakeStorage } from "./helpers/fake_storage";
+} from "../dist/index.js";
+import { FakeStorage } from "./helpers/fake_storage.js";
 
 describe("Simultaneous Session Initiation (Race Condition)", () => {
   it("should handle both sides initiating sessions simultaneously", async () => {

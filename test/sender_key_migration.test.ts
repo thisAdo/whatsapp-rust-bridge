@@ -1,6 +1,6 @@
-import { describe, it, expect } from "bun:test";
-import { ProtocolAddress, GroupCipher } from "../dist";
-import { FakeStorage } from "./helpers/fake_storage";
+import { describe, it, expect } from './testkit.js';
+import { ProtocolAddress, GroupCipher } from "../dist/index.js";
+import { FakeStorage } from "./helpers/fake_storage.js";
 
 describe("Legacy SenderKey Migration", () => {
   it("should migrate a legacy JSON sender key into a valid record", async () => {

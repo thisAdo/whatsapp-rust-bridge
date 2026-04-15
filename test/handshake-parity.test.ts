@@ -1,6 +1,6 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect } from './testkit.js';
 import { encodeBinaryNode } from "baileys";
-import { encodeNode, decodeNode, type BinaryNode } from "../dist";
+import { encodeNode, decodeNode, type BinaryNode } from "../dist/index.js";
 
 function hex(buffer: Uint8Array): string {
   return Buffer.from(buffer).toString("hex");

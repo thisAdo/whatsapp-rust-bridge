@@ -1,10 +1,10 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect } from './testkit.js';
 import { randomBytes } from "crypto";
-import { md5, hkdf } from "../dist";
+import { md5, hkdf } from "../dist/index.js";
 import {
   md5 as baileysMd5,
   hkdf as baileysHkdf,
-} from "baileys/lib/Utils/crypto";
+} from "baileys/lib/Utils/crypto.js";
 
 function hex(buffer: Uint8Array | Buffer): string {
   return Buffer.from(buffer).toString("hex");

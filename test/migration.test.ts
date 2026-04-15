@@ -1,11 +1,11 @@
-import { describe, it, expect } from "bun:test";
+import { describe, it, expect } from './testkit.js';
 import {
   ProtocolAddress,
   SessionCipher,
   generateIdentityKeyPair,
   generatePreKey,
-} from "../dist";
-import { FakeStorage } from "./helpers/fake_storage";
+} from "../dist/index.js";
+import { FakeStorage } from "./helpers/fake_storage.js";
 
 describe("Legacy Session Migration", () => {
   it("should migrate a legacy JSON session into a valid open session", async () => {
